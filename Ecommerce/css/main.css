@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #e5345b;
+}
+body{
+    font-family: var(--sm-font);
+}
+.bg-primary{
+    background-color:var(--pink)!important ;
+}
+.btn:not(.nav-btns button){
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px 28px;
+    border-radius: 15px;
+    border: 1px solid rgba(85, 85,85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: white; 
+    color: black;
+    
+}
+.text-primary{
+    color: var(--pink)!important;
+}
+.navbar{
+    box-shadow: 0 3px 9px 3px rgba(0, 0,0, 0.1);
+}
+.navbar-brand img{
+    width: 30px;
+}
+.navbar-brand span{
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+.nav-link:hover{
+    color: var(--pink)!important;
+}
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0,0, 0.05);
+}
+#header{
+    background: url(../images/banner-img-1.jpg) top/cover no-repeat;
+}
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+
+.tittle h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.row-btn{
+    background-color: white;
+    color: var(--pink);
+    padding: 10px 28px;
+    border-radius: 15px;
+    border: 1px solid var(--pink);
+}
+
+.row-btn:hover{
+    background-color: var(--pink);
+    color: white;
+    border: 1px solid var(--pink);
+}
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+
+}
+
+.special-img span{
+    top: 20px;
+    right: 20px;
+}
+.special-list .btn{
+    padding: 8px 20px!important;
+}
+.special-img img{
+    transition: all 0.3s ease;
+}
+.special-img:hover img{
+    transform: scale(1.2);
+}
+
+
+#offers{
+    background: url(../images/Offers-bannar.jpg) center/cover no-repeat;
+}
+#offers .row{
+    min-height: 60vh;
+}
+.offers-content span{
+    font-size: 28px;
+}
+.offers-content h2{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.offers-content btn{
+    border-color: transparent!important;
+}
+.offer-btn{
+    background-color: white;
+    color: black;
+    padding: 10px 28px;
+    border-radius: 15px;
+    border: 1px solid black;
+    text-decoration: none;
+    
+}
+.offer-btn:hover{
+    background-color: black;
+    color: white;
+}
+#about{
+    background-color: rgba(179, 179,179, 0.05);
+}
+#newsletter{
+    background-color: rgba(179, 179,179, 0.05);
+}
+#newsletter .input-group{
+    max-width: 500px;
+}
+#newsletter .form-control{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#newsletter .btn{
+    background-color: var(--pink);
+    color: white;
+    border-color: var(--pink);
+}
+#newsletter .btn:hover{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.bottom_container{
+    background-color: #293462;
+    padding: 50px 0 20px;
+}
+.footer-link{
+    color: #F6C6EA;
+    margin-left: 300px;
+    font-family: 'Montserrat', sans-serif;
+}
+.footer-link:hover{
+    color: #F6C6EA;
+}
+.copyright{
+    margin-left: 550px;
+    color: antiquewhite;
+}
+@media(min-width: 992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}
